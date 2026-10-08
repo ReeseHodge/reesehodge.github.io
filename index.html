@@ -8,7 +8,14 @@
     </head>
     <body>
         <script>
-            function hide_header"
+            function hide_header(file_to_unhide){
+                document.getElementByID("header").hidden=true;
+                document.getElementByID(file_to_unhide).hidden=false;
+            }
+            function show_header(file_to_hide){
+                document.getElementByID("header").hidden=false;
+                document.getElementByID(file_to_hide).hidden=true;
+            }
         </script>
         <header id="header">
             <h1>Welcome to My Website</h1>
